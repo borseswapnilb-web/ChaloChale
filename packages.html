@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse curated ChaloChale tour packages across India. Find trips by budget, duration, category and rating. Plan your perfect vacation today.">
+    <meta name="keywords" content="tour packages, India tours, travel packages, vacation deals, Goa, Ladakh, Kerala, Rajasthan">
+    <meta name="author" content="ChaloChale">
+    <title>Tour Packages - ChaloChale</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header">
+    </header>
+
+    <main id="main-content">
+
+        <section id="packages-hero" class="hero-section hero-page" aria-label="Tour packages hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Tour Packages for Every Traveler</h1>
+                <p class="hero-subtitle">Handpicked itineraries with trusted guides, transparent pricing, and unforgettable experiences.</p>
+            </div>
+        </section>
+
+        <section id="packages-search-section" class="hero-search-section" aria-label="Search packages">
+            <div class="hero-search-container">
+                <form id="packages-search" class="search-form" role="search" novalidate>
+                    <div class="form-field">
+                        <label for="package-search-input">Search packages</label>
+                        <input type="search" id="package-search-input" name="query" placeholder="Search by title, destination or keyword" aria-label="Search packages">
+                    </div>
+                    <button type="submit" class="btn btn-primary search-submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="packages-listing" class="packages-listing-section" aria-labelledby="packages-listing-title">
+            <div class="section-container">
+
+                <header class="section-header packages-listing-header">
+                    <h2 id="packages-listing-title">Explore Our Packages</h2>
+                    <p>Filter by category, duration, budget and rating to find the perfect trip.</p>
+                </header>
+
+                <div id="packages-filters" class="filter-bar" aria-label="Package filters">
+
+                    <div class="filter-group">
+                        <label for="filter-category" class="filter-label">Category</label>
+                        <select id="filter-category" class="filter-select" data-filter="category">
+                            <option value="all">All Categories</option>
+                            <option value="Beach">Beach</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Heritage">Heritage</option>
+                            <option value="Nature">Nature</option>
+                            <option value="Mountain">Mountain</option>
+                            <option value="Cultural">Cultural</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-duration" class="filter-label">Duration</label>
+                        <select id="filter-duration" class="filter-select" data-filter="duration">
+                            <option value="all">Any Duration</option>
+                            <option value="short">1–3 Days</option>
+                            <option value="medium">4–6 Days</option>
+                            <option value="long">7+ Days</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-budget" class="filter-label">Budget</label>
+                        <select id="filter-budget" class="filter-select" data-filter="budget">
+                            <option value="all">Any Budget</option>
+                            <option value="0-10000">Under ₹10,000</option>
+                            <option value="10000-25000">₹10,000 – ₹25,000</option>
+                            <option value="25000-40000">₹25,000 – ₹40,000</option>
+                            <option value="40000-999999">₹40,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-rating" class="filter-label">Rating</label>
+                        <select id="filter-rating" class="filter-select" data-filter="rating">
+                            <option value="all">All Ratings</option>
+                            <option value="4.5">4.5+ Stars</option>
+                            <option value="4">4+ Stars</option>
+                            <option value="3.5">3.5+ Stars</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group filter-group-actions">
+                        <button type="button" id="packages-clear-filters" class="btn btn-outline filter-clear-btn">Clear Filters</button>
+                    </div>
+
+                </div>
+
+                <p id="packages-results-count" class="results-count" aria-live="polite"></p>
+
+                <div id="packages-grid" class="packages-grid">
+                </div>
+
+                <div id="packages-empty" class="empty-state" role="status" aria-live="polite" hidden>
+                    <div class="empty-state-content">
+                        <h3>No packages found</h3>
+                        <p>Try adjusting your search or filters to see more results.</p>
+                        <button type="button" id="packages-empty-clear-filters" class="btn btn-primary">Clear Filters</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="packages-cta" class="newsletter-section cta-section" aria-labelledby="packages-cta-title">
+            <div class="section-container newsletter-container">
+                <div class="newsletter-content">
+                    <h2 id="packages-cta-title">Need a Custom Package?</h2>
+                    <p>Tell us where you want to go and we'll design a personalized itinerary just for you.</p>
+                </div>
+                <div class="newsletter-form">
+                    <a href="contact.html" class="btn btn-primary">Contact Our Experts</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/packages.js" defer></script>
+
+</body>
+</html>
