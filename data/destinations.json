@@ -1,0 +1,101 @@
+[
+  {
+    "id": "dest-001",
+    "name": "Goa",
+    "country": "India",
+    "location": "West Coast, India",
+    "image": "assets/images/destinations/goa.jpg",
+    "description": "Sun-kissed beaches, vibrant nightlife, and Portuguese heritage blend beautifully along the Arabian Sea.",
+    "category": "Beach",
+    "rating": 4.8,
+    "duration": 5
+  },
+  {
+    "id": "dest-002",
+    "name": "Leh-Ladakh",
+    "country": "India",
+    "location": "Ladakh, India",
+    "image": "assets/images/destinations/ladakh.jpg",
+    "description": "High-altitude desert with dramatic monasteries, crystal lakes, and the world's most scenic mountain passes.",
+    "category": "Adventure",
+    "rating": 4.9,
+    "duration": 8
+  },
+  {
+    "id": "dest-003",
+    "name": "Jaipur",
+    "country": "India",
+    "location": "Rajasthan, India",
+    "image": "assets/images/destinations/jaipur.jpg",
+    "description": "The Pink City dazzles with royal palaces, colorful bazaars, and centuries-old Rajput architecture.",
+    "category": "Heritage",
+    "rating": 4.7,
+    "duration": 3
+  },
+  {
+    "id": "dest-004",
+    "name": "Kerala Backwaters",
+    "country": "India",
+    "location": "Kerala, India",
+    "image": "assets/images/destinations/kerala.jpg",
+    "description": "Glide through tranquil palm-fringed canals on traditional houseboats surrounded by lush greenery.",
+    "category": "Nature",
+    "rating": 4.8,
+    "duration": 6
+  },
+  {
+    "id": "dest-005",
+    "name": "Manali",
+    "country": "India",
+    "location": "Himachal Pradesh, India",
+    "image": "assets/images/destinations/manali.jpg",
+    "description": "A snow-capped Himalayan retreat offering thrilling adventures, cozy cafes, and pine-scented valleys.",
+    "category": "Mountain",
+    "rating": 4.6,
+    "duration": 5
+  },
+  {
+    "id": "dest-006",
+    "name": "Andaman Islands",
+    "country": "India",
+    "location": "Bay of Bengal, India",
+    "image": "assets/images/destinations/andaman.jpg",
+    "description": "Pristine turquoise waters, coral reefs, and untouched beaches perfect for diving and relaxation.",
+    "category": "Beach",
+    "rating": 4.9,
+    "duration": 7
+  },
+  {
+    "id": "dest-007",
+    "name": "Varanasi",
+    "country": "India",
+    "location": "Uttar Pradesh, India",
+    "image": "assets/images/destinations/varanasi.jpg",
+    "description": "The spiritual heart of India with ancient ghats, sacred rivers, and timeless evening aarti rituals.",
+    "category": "Cultural",
+    "rating": 4.7,
+    "duration": 2
+  },
+  {
+    "id": "dest-008",
+    "name": "Shillong",
+    "country": "India",
+    "location": "Meghalaya, India",
+    "image": "assets/images/destinations/shillong.jpg",
+    "description": "The Scotland of the East, known for rolling hills, cascading waterfalls, and living root bridges.",
+    "category": "Nature",
+    "rating": 4.6,
+    "duration": 6
+  },
+  {
+    "id": "dest-009",
+    "name": "Rishikesh",
+    "country": "India",
+    "location": "Uttarakhand, India",
+    "image": "assets/images/destinations/rishikesh.jpg",
+    "description": "The yoga capital of the world nestled along the Ganges, perfect for adventure sports and spirituality.",
+    "category": "Adventure",
+    "rating": 4.8,
+    "duration": 4
+  }
+]
