@@ -1,0 +1,47 @@
+[
+  {
+    "id": "team-001",
+    "name": "Aarav Mehta",
+    "role": "Founder & CEO",
+    "image": "assets/images/team/team-4.jpg",
+    "bio": "A passionate traveler with 15 years of experience curating unforgettable journeys across India and beyond.",
+    "social": {
+      "linkedin": "https://linkedin.com/in/aarav-mehta",
+      "twitter": "https://twitter.com/aarav_mehta",
+      "instagram": "https://instagram.com/aarav.mehta"
+    }
+  },
+  {
+    "id": "team-002",
+    "name": "Priya Suresh",
+    "role": "Head of Operations",
+    "image": "assets/images/team/team-3.jpg",
+    "bio": "Ensures every itinerary runs flawlessly — from the first booking email to the final farewell.",
+    "social": {
+      "linkedin": "https://linkedin.com/in/priya-nair",
+      "instagram": "https://instagram.com/priya.nair"
+    }
+  },
+  {
+    "id": "team-003",
+    "name": "Rohan Kapoor",
+    "role": "Lead Travel Designer",
+    "image": "assets/images/team/team-2.jpg",
+    "bio": "Designs bespoke routes and authentic local experiences that go beyond the typical tourist trail.",
+    "social": {
+      "linkedin": "https://linkedin.com/in/rohan-kapoor",
+      "twitter": "https://twitter.com/rohan_travels"
+    }
+  },
+  {
+    "id": "team-004",
+    "name": "Saanvi Singh",
+    "role": "Customer Experience Lead",
+    "image": "assets/images/team/team-1.jpg",
+    "bio": "Your friendly point of contact — always ready to help you plan, adjust, and enjoy your trip.",
+    "social": {
+      "linkedin": "https://linkedin.com/in/saanvi-singh",
+      "instagram": "https://instagram.com/saanvi.singh"
+    }
+  }
+]

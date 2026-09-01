@@ -1,0 +1,242 @@
+[
+  {
+    "id": "pkg-001",
+    "title": "Goa Beach Paradise",
+    "destination": "Goa",
+    "country": "India",
+    "image": "assets/images/packages/goa-paradise.jpg",
+    "category": "Beach",
+    "duration": "5 Days / 4 Nights",
+    "nights": 4,
+    "price": 18500,
+    "rating": 4.8,
+    "reviewCount": 245,
+    "description": "Relax on sun-kissed beaches, enjoy thrilling water sports, and explore vibrant nightlife in North and South Goa.",
+    "features": [
+      "Beachside resort stay",
+      "Guided North Goa tour",
+      "Water sports activities",
+      "Cruise with dinner"
+    ]
+  },
+  {
+    "id": "pkg-002",
+    "title": "Ladakh Adventure Expedition",
+    "destination": "Leh-Ladakh",
+    "country": "India",
+    "image": "assets/images/packages/ladakh-expedition.jpg",
+    "category": "Adventure",
+    "duration": "8 Days / 7 Nights",
+    "nights": 7,
+    "price": 32000,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "description": "Cross the highest motorable roads, visit ancient monasteries, and camp under starry Ladakhi skies.",
+    "features": [
+      "Khardung La pass visit",
+      "Pangong Lake camping",
+      "Monastery guided tours",
+      "All permits included"
+    ]
+  },
+  {
+    "id": "pkg-003",
+    "title": "Royal Rajasthan Heritage Tour",
+    "destination": "Jaipur",
+    "country": "India",
+    "image": "assets/images/packages/rajasthan-heritage.jpg",
+    "category": "Heritage",
+    "duration": "6 Days / 5 Nights",
+    "nights": 5,
+    "price": 24500,
+    "rating": 4.7,
+    "reviewCount": 312,
+    "description": "Discover the regal charm of Jaipur, Udaipur, and Jodhpur with palace stays and cultural performances.",
+    "features": [
+      "Palace hotel accommodation",
+      "Amber Fort guided tour",
+      "Traditional Rajasthani dinner",
+      "Heritage walk in old city"
+    ]
+  },
+  {
+    "id": "pkg-004",
+    "title": "Kerala Backwaters Honeymoon",
+    "destination": "Kerala",
+    "country": "India",
+    "image": "assets/images/packages/kerala-honeymoon.jpg",
+    "category": "Nature",
+    "duration": "7 Days / 6 Nights",
+    "nights": 6,
+    "price": 28900,
+    "rating": 4.9,
+    "reviewCount": 421,
+    "description": "Cruise through serene backwaters on a private houseboat and unwind in lush hill station resorts.",
+    "features": [
+      "Private houseboat stay",
+      "Munnar tea garden visit",
+      "Ayurvedic spa session",
+      "Candlelight dinner"
+    ]
+  },
+  {
+    "id": "pkg-005",
+    "title": "Manali Snow Escape",
+    "destination": "Manali",
+    "country": "India",
+    "image": "assets/images/packages/manali-snow.jpg",
+    "category": "Mountain",
+    "duration": "5 Days / 4 Nights",
+    "nights": 4,
+    "price": 15800,
+    "rating": 4.6,
+    "reviewCount": 198,
+    "description": "Experience snowfall, ski at Solang Valley, and enjoy cozy mountain stays with breathtaking views.",
+    "features": [
+      "Snow point excursion",
+      "Skiing equipment rental",
+      "River rafting adventure",
+      "Hot breakfast included"
+    ]
+  },
+  {
+    "id": "pkg-006",
+    "title": "Andaman Island Hopper",
+    "destination": "Andaman",
+    "country": "India",
+    "image": "assets/images/packages/andaman-hopper.jpg",
+    "category": "Beach",
+    "duration": "6 Days / 5 Nights",
+    "nights": 5,
+    "price": 27500,
+    "rating": 4.8,
+    "reviewCount": 267,
+    "description": "Snorkel through coral reefs at Havelock Island and relax on the pristine Radhanagar Beach.",
+    "features": [
+      "Scuba diving session",
+      "Glass bottom boat ride",
+      "Neil Island day trip",
+      "Beach resort stay"
+    ]
+  },
+  {
+    "id": "pkg-007",
+    "title": "Spiritual Varanasi Experience",
+    "destination": "Varanasi",
+    "country": "India",
+    "image": "assets/images/packages/varanasi-spiritual.jpg",
+    "category": "Cultural",
+    "duration": "3 Days / 2 Nights",
+    "nights": 2,
+    "price": 9500,
+    "rating": 4.5,
+    "reviewCount": 156,
+    "description": "Witness the mesmerizing Ganga Aarti, take a sunrise boat ride, and explore sacred temple trails.",
+    "features": [
+      "Sunrise boat ride",
+      "Evening Ganga Aarti",
+      "Sarnath guided tour",
+      "Heritage hotel stay"
+    ]
+  },
+  {
+    "id": "pkg-008",
+    "title": "Shillong & Meghalaya Explorer",
+    "destination": "Shillong",
+    "country": "India",
+    "image": "assets/images/packages/meghalaya-explorer.jpg",
+    "category": "Nature",
+    "duration": "6 Days / 5 Nights",
+    "nights": 5,
+    "price": 21500,
+    "rating": 4.7,
+    "reviewCount": 134,
+    "description": "Trek to living root bridges, explore crystal-clear rivers, and visit Asia's cleanest village.",
+    "features": [
+      "Dawki river boat ride",
+      "Living root bridge trek",
+      "Mawlynnong village visit",
+      "Cave exploration"
+    ]
+  },
+  {
+    "id": "pkg-009",
+    "title": "Rishikesh Yoga & Adventure",
+    "destination": "Rishikesh",
+    "country": "India",
+    "image": "assets/images/packages/rishikesh-yoga.jpg",
+    "category": "Adventure",
+    "duration": "4 Days / 3 Nights",
+    "nights": 3,
+    "price": 12500,
+    "rating": 4.8,
+    "reviewCount": 289,
+    "description": "Rejuvenate with daily yoga sessions, enjoy river rafting, and attend the iconic evening aarti at Triveni.",
+    "features": [
+      "Daily yoga sessions",
+      "River rafting adventure",
+      "Beatles Ashram visit",
+      "Vegetarian meals included"
+    ]
+  },
+  {
+    "id": "pkg-010",
+    "title": "Budget Backpacker Goa",
+    "destination": "Goa",
+    "country": "India",
+    "image": "assets/images/packages/goa-budget.jpg",
+    "category": "Beach",
+    "duration": "3 Days / 2 Nights",
+    "nights": 2,
+    "price": 6500,
+    "rating": 4.3,
+    "reviewCount": 102,
+    "description": "An affordable Goa getaway for backpackers with beach hopping, flea markets, and hostel stays.",
+    "features": [
+      "Hostel accommodation",
+      "Bike rental included",
+      "Anjuna flea market tour",
+      "Group bonfire night"
+    ]
+  },
+  {
+    "id": "pkg-011",
+    "title": "Luxury Udaipur Palace Stay",
+    "destination": "Udaipur",
+    "country": "India",
+    "image": "assets/images/packages/udaipur-luxury.jpg",
+    "category": "Heritage",
+    "duration": "4 Days / 3 Nights",
+    "nights": 3,
+    "price": 45000,
+    "rating": 4.9,
+    "reviewCount": 178,
+    "description": "Stay in a heritage palace hotel on Lake Pichola with private boat rides and royal dining.",
+    "features": [
+      "Lake-facing palace suite",
+      "Private boat cruise",
+      "Royal dining experience",
+      "Spa and wellness session"
+    ]
+  },
+  {
+    "id": "pkg-012",
+    "title": "Himalayan Trek Expedition",
+    "destination": "Manali",
+    "country": "India",
+    "image": "assets/images/packages/himalayan-trek.jpg",
+    "category": "Adventure",
+    "duration": "9 Days / 8 Nights",
+    "nights": 8,
+    "price": 38500,
+    "rating": 4.8,
+    "reviewCount": 145,
+    "description": "A challenging high-altitude trek through Hampta Pass with camping under pristine Himalayan skies.",
+    "features": [
+      "Certified trek leader",
+      "Camping equipment provided",
+      "High altitude meals",
+      "Emergency medical kit"
+    ]
+  }
+]

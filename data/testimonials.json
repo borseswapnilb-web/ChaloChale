@@ -1,0 +1,50 @@
+[
+  {
+    "id": "test-001",
+    "name": "Priya Sharma",
+    "image": "assets/images/team/testimonial-1.jpg",
+    "destination": "Goa",
+    "rating": 5,
+    "review": "Our Goa trip with ChaloChale was absolutely seamless. The beach resort was stunning and every activity was well planned. Highly recommended for families!"
+  },
+  {
+    "id": "test-002",
+    "name": "Rahul Verma",
+    "image": "assets/images/team/testimonial-2.jpg",
+    "destination": "Leh-Ladakh",
+    "rating": 5,
+    "review": "The Ladakh expedition exceeded every expectation. The team's attention to altitude safety and the camping experience at Pangong Lake was truly magical."
+  },
+  {
+    "id": "test-003",
+    "name": "Anjali Mehta",
+    "image": "assets/images/team/testimonial-3.jpg",
+    "destination": "Kerala",
+    "rating": 5,
+    "review": "Our honeymoon in Kerala was a dream come true. The private houseboat, the spa session, and the candlelight dinner were beautifully arranged. Thank you ChaloChale!"
+  },
+  {
+    "id": "test-004",
+    "name": "Vikram Patel",
+    "image": "assets/images/team/testimonial-4.jpg",
+    "destination": "Rajasthan",
+    "rating": 4,
+    "review": "The Rajasthan heritage tour gave us a deep glimpse into royal India. Staying in palace hotels and exploring Amber Fort with our guide was unforgettable."
+  },
+  {
+    "id": "test-005",
+    "name": "Sneha Kapoor",
+    "image": "assets/images/team/testimonial-5.jpg",
+    "destination": "Andaman",
+    "rating": 5,
+    "review": "Scuba diving at Havelock Island was the highlight of our Andaman trip. ChaloChale took care of every detail so we could just enjoy and relax."
+  },
+  {
+    "id": "test-006",
+    "name": "Arjun Reddy",
+    "image": "assets/images/team/testimonial-6.jpg",
+    "destination": "Manali",
+    "rating": 4,
+    "review": "Manali in December was a snowy paradise. The team arranged everything from skiing at Solang Valley to a cozy riverside camp. Great value for money."
+  }
+]
