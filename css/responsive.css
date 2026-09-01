@@ -1,0 +1,786 @@
+/* =========================================================
+   ChaloChale - Responsive Stylesheet
+   Breakpoints: Mobile-first base in style/components
+   Tablet: 768px+ | Desktop: 1024px+ | Large: 1280px+
+   ========================================================= */
+
+/* ---------- Base: Mobile-first safeguards ---------- */
+html, body {
+    overflow-x: hidden;
+}
+
+img, svg, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================================================
+   Large phones / small tablets
+   ========================================================= */
+@media (min-width: 480px) {
+    :root {
+        --container-padding: 1.25rem;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* =========================================================
+   Tablet (768px+)
+   ========================================================= */
+@media (min-width: 768px) {
+
+    /* Typography */
+    h1 { font-size: var(--font-size-4xl); }
+    h2 { font-size: var(--font-size-3xl); }
+
+    /* Container */
+    :root {
+        --container-padding: 1.5rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Hero search */
+    .hero-search-container {
+        padding: var(--space-6);
+    }
+
+    .search-form {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-5);
+    }
+
+    .search-submit {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    /* Grids */
+    .destinations-grid,
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        flex: 0 0 calc((100% - var(--space-5)) / 2);
+    }
+
+    /* Newsletter */
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+        text-align: center;
+    }
+
+    .newsletter-form .form-field {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .newsletter-form input {
+        flex: 1;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* Section spacing */
+    .featured-destinations-section,
+    .popular-packages-section,
+    .why-choose-section,
+    .testimonials-section {
+        padding: var(--space-8) 0;
+    }
+}
+
+/* =========================================================
+   Desktop (1024px+)
+   ========================================================= */
+@media (min-width: 1024px) {
+
+    /* Navigation */
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+        gap: var(--space-6);
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: var(--space-6);
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: 90vh;
+    }
+
+    .hero-title {
+        font-size: 3.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-md);
+        max-width: 640px;
+    }
+
+    /* Hero search - single row */
+    .search-form {
+        grid-template-columns: 2fr 1fr 1fr auto;
+    }
+
+    .search-submit {
+        grid-column: auto;
+        width: auto;
+    }
+
+    /* Grids */
+    .destinations-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Testimonials - 3 visible */
+    .testimonial-card {
+        flex: 0 0 calc((100% - 2 * var(--space-5)) / 3);
+    }
+
+    /* Newsletter - two columns */
+    .newsletter-container {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-7);
+        text-align: left;
+        align-items: center;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.2fr;
+        gap: var(--space-6);
+    }
+}
+
+/* =========================================================
+   Large Desktop (1280px+)
+   ========================================================= */
+@media (min-width: 1280px) {
+
+    :root {
+        --container-padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .section-container {
+        max-width: 1280px;
+    }
+}
+
+/* =========================================================
+   Mobile-specific overrides (max-width)
+   ========================================================= */
+@media (max-width: 1023px) {
+
+    /* Show hamburger, hide menu by default */
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background-color: var(--color-surface);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: var(--space-5) var(--container-padding);
+        box-shadow: var(--shadow-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition-base), padding var(--transition-base);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-menu.open {
+        max-height: 500px;
+        padding-top: var(--space-5);
+        padding-bottom: var(--space-5);
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .navbar-link {
+        padding: var(--space-3) 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .navbar-link::after {
+        display: none;
+    }
+
+    .navbar-actions {
+        margin-top: var(--space-4);
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-3);
+    }
+
+    .navbar-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Container */
+    :root {
+        --container-padding: 1rem;
+    }
+
+    /* Typography */
+    h1 { font-size: 1.875rem; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.375rem; }
+
+    .section-header {
+        margin-bottom: var(--space-5);
+    }
+
+    .section-header p {
+        font-size: var(--font-size-base);
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: 70vh;
+        padding: var(--space-6) var(--container-padding);
+    }
+
+    .hero-title {
+        font-size: 1.875rem;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--space-5);
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: var(--space-3);
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    /* Hero search */
+    .hero-search-section {
+        margin-top: -40px;
+    }
+
+    .hero-search-container {
+        padding: var(--space-4);
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .search-submit {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    /* Section spacing */
+    .featured-destinations-section,
+    .popular-packages-section,
+    .why-choose-section,
+    .testimonials-section {
+        padding: var(--space-7) 0;
+    }
+
+    /* Cards */
+    .card-body {
+        padding: var(--space-4);
+    }
+
+    .card-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    /* Grids - single column */
+    .destinations-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .feature-item {
+        padding: var(--space-4);
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: var(--space-3);
+    }
+
+    .feature-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Testimonials */
+    .testimonials-carousel {
+        min-height: 360px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 100%;
+        padding: var(--space-5);
+    }
+
+    /* Newsletter */
+    .newsletter-section {
+        padding: var(--space-7) 0;
+    }
+
+    .newsletter-form .form-field {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: var(--space-7) 0 var(--space-4);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-3);
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-4);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 1.625rem;
+    }
+
+    .hero-search-container {
+        padding: var(--space-3);
+    }
+
+    .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: var(--font-size-sm);
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* =========================================================
+   Reduced motion accessibility
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================================================
+   Print styles
+   ========================================================= */
+@media print {
+    .site-header,
+    .navbar,
+    .hero-search-section,
+    .newsletter-section,
+    .site-footer,
+    .carousel-controls {
+        display: none !important;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* =========================================================
+   Destinations Page - Responsive Additions
+   ========================================================= */
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    .hero-section.hero-page {
+        min-height: 45vh;
+    }
+
+    .filter-bar {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: var(--space-5);
+    }
+
+    .filter-group-actions {
+        margin-left: auto;
+    }
+
+    .filter-clear-btn {
+        width: auto;
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    .hero-section.hero-page {
+        min-height: 50vh;
+    }
+
+    .hero-section.hero-page .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .filter-bar {
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .filter-chips {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+
+    /* Hero */
+    .hero-section.hero-page {
+        min-height: 40vh;
+        padding: var(--space-6) var(--container-padding);
+    }
+
+    .hero-section.hero-page .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-section.hero-page .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    /* Listing section */
+    .destinations-listing-section {
+        padding: var(--space-7) 0;
+    }
+
+    /* Search */
+    .destinations-search-section .hero-search-container,
+    .destinations-listing-section ~ #destinations-search-section .hero-search-container {
+        padding: var(--space-4);
+    }
+
+    #destinations-search.search-form {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    #destinations-search .search-submit,
+    #destinations-search button[type="submit"] {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    /* Filters */
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-4);
+        padding: var(--space-4);
+    }
+
+    .filter-group {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .filter-chips {
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+
+    .filter-chip {
+        flex: 0 0 auto;
+    }
+
+    .filter-select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .filter-group-actions {
+        margin-left: 0;
+        align-self: stretch;
+    }
+
+    .filter-clear-btn {
+        width: 100%;
+    }
+
+    /* Grid already single column via existing rules */
+    #destinations-grid.destinations-grid {
+        gap: var(--space-5);
+    }
+
+    /* Results count */
+    .results-count {
+        text-align: center;
+        font-size: var(--font-size-sm);
+    }
+
+    /* Empty state */
+    .empty-state-content {
+        padding: var(--space-6) var(--space-4);
+    }
+
+    /* CTA */
+    .cta-section .newsletter-container {
+        text-align: center;
+        gap: var(--space-5);
+    }
+
+    .cta-section .newsletter-form {
+        justify-content: center;
+    }
+
+    .cta-section .newsletter-form .btn {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section.hero-page {
+        min-height: 35vh;
+    }
+
+    .filter-chips {
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================================================
+   About Page - Responsive Additions
+   ========================================================= */
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    .about-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    .about-story-container {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-7);
+    }
+}
+
+/* Tablet + Mobile (max-width: 1023px) */
+@media (max-width: 1023px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+
+    .about-section,
+    .about-team-section {
+        padding: var(--space-7) 0;
+    }
+
+    .about-story-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .about-story-image {
+        order: -1;
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* =========================================================
+   Contact Page - Responsive Additions
+   ========================================================= */
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    .contact-container {
+        gap: var(--space-5);
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr 1.2fr;
+        gap: var(--space-7);
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 1023px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-section {
+        padding: var(--space-7) 0;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        padding: var(--space-5);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .contact-info-item {
+        gap: var(--space-3);
+    }
+
+    .contact-info-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .contact-info-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-submit {
+        width: 100%;
+        align-self: stretch;
+    }
+}
