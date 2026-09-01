@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChaloChale - Discover amazing travel destinations and curated tour packages. Plan your next adventure with trusted local guides.">
+    <meta name="keywords" content="travel, tours, destinations, vacation, ChaloChale, India travel">
+    <meta name="author" content="ChaloChale">
+    <title>ChaloChale - Discover Your Next Adventure</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-64.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header">
+        <nav id="site-navbar" class="navbar" aria-label="Primary navigation">
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="hero" class="hero-section" aria-label="Hero introduction">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Next Adventure</h1>
+                <p class="hero-subtitle">Explore breathtaking destinations and curated travel packages across India and beyond.</p>
+                <div class="hero-actions">
+                    <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                    <a href="destinations.html" class="btn btn-secondary">View Destinations</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero-search" class="hero-search-section" aria-label="Quick trip search">
+            <div class="hero-search-container">
+                <form id="hero-search-form" class="search-form" novalidate>
+                    <div class="form-field">
+                        <label for="search-destination">Destination</label>
+                        <select id="search-destination" name="destination" required aria-required="true">
+                            <option value="">Choose a destination</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="search-date">Travel Date</label>
+                        <input type="date" id="search-date" name="date" required aria-required="true">
+                    </div>
+                    <div class="form-field">
+                        <label for="search-travelers">Travelers</label>
+                        <input type="number" id="search-travelers" name="travelers" min="1" max="20" value="1" required aria-required="true">
+                    </div>
+                    <button type="submit" class="btn btn-primary search-submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="featured-destinations" class="featured-destinations-section" aria-labelledby="featured-destinations-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="featured-destinations-title">Featured Destinations</h2>
+                    <p>Handpicked places loved by travelers around the world.</p>
+                </header>
+                <div id="featured-destinations-grid" class="destinations-grid">
+                </div>
+                <div class="section-footer">
+                    <a href="destinations.html" class="btn btn-outline">View All Destinations</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="popular-packages" class="popular-packages-section" aria-labelledby="popular-packages-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="popular-packages-title">Popular Tour Packages</h2>
+                    <p>Curated itineraries designed for unforgettable experiences.</p>
+                </header>
+                <div id="popular-packages-grid" class="packages-grid">
+                </div>
+                <div class="section-footer">
+                    <a href="packages.html" class="btn btn-outline">View All Packages</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose" class="why-choose-section" aria-labelledby="why-choose-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="why-choose-title">Why Choose ChaloChale</h2>
+                    <p>Travel with confidence, comfort, and care.</p>
+                </header>
+                <div class="features-grid">
+                    <article class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">
+                            <img src="assets/icons/best-price.svg" alt="">
+                        </div>
+                        <h3>Best Price Guarantee</h3>
+                        <p>We offer competitive prices on every travel package, always.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">
+                            <img src="assets/icons/local-guide.svg" alt="">
+                        </div>
+                        <h3>Trusted Local Guides</h3>
+                        <p>Explore with experienced guides who know every corner of the destination.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">
+                            <img src="assets/icons/support.svg" alt="">
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our travel experts are available around the clock to assist you.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">
+                            <img src="assets/icons/custom-trip.svg" alt="">
+                        </div>
+                        <h3>Custom Itineraries</h3>
+                        <p>Tailor your trip to match your style, pace, and preferences.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="testimonials-title">Happy Travelers</h2>
+                    <p>Real stories from travelers who explored with us.</p>
+                </header>
+                <div id="testimonials-carousel" class="testimonials-carousel">
+                </div>
+                <div id="testimonials-controls" class="carousel-controls" aria-label="Testimonial navigation">
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section" aria-labelledby="newsletter-title">
+            <div class="section-container newsletter-container">
+                <div class="newsletter-content">
+                    <h2 id="newsletter-title">Exclusive Deals &amp; Travel Inspiration</h2>
+                    <p>Subscribe to receive special offers, travel guides, and destination inspiration straight to your inbox.</p>
+                </div>
+                <form id="newsletter-form" class="newsletter-form" novalidate>
+                    <div class="form-field">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required aria-required="true">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <p id="newsletter-message" class="newsletter-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
+
+</body>
+</html>
